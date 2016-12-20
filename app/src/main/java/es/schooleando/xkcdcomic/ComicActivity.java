@@ -27,7 +27,12 @@ public class ComicActivity extends AppCompatActivity implements BgResultReceiver
 
     @Override
     public void onReceiveResult(int resultCode, Bundle resultData) {
-        // TODO: Aquí obtenemos la URL del archivo y lo mostramos en el ImageView.
+        // TODO: podemos recibir diferentes resultCodes del IntentService
+        //      ERROR -> ha habido un problema de la conexión (Toast)
+        //      PROGRESS -> nos estamos descargando la imagen (ProgressBar)
+        //      OK -> nos hemos descargado la imagen correctamente. (ImageView)
+        // Debeis controlar cada caso
+        
 
     }
 
